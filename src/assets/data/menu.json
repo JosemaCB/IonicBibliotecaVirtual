@@ -1,0 +1,5 @@
+[
+  { "nombre": "Libros Populares", "ruta": "/populares", "icono": "star" },
+  { "nombre": "Nuevas Adquisiciones", "ruta": "/nuevas", "icono": "book" },
+  { "nombre": "Recomendaciones", "ruta": "/recomendaciones", "icono": "thumbs-up" }
+]

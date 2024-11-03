@@ -1,0 +1,21 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center" color="primary">Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="primerMenu" color="primary"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <ion-list-header color="primary">Secciones</ion-list-header>
+    @for (c of componentes; track c) {
+      <ion-item [routerLink]="c.ruta" detail="true">
+        <ion-icon [name]="c.icono" slot="start" color="primary"></ion-icon>
+        <ion-label>{{c.nombre}}</ion-label>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>
